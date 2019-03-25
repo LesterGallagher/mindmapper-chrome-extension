@@ -1,0 +1,3 @@
+[submodule "mindmapper"]
+	path = mindmapper
+	url = https://github.com/LesterGallagher/mindmapper.git

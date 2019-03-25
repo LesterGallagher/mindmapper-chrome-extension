@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      width: 300px;
+      font-size: 16px;
+    }
+
+    #list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    #list li {
+      padding: 8px;
+    }
+    
+    #list .thumbnail {
+      padding: 16px;
+      background: #0078D7;
+      color: #fff;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    #list li:hover {
+      background-color: #E5E5E5;
+    }
+
+    #list .text {
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    [disabled] {
+      opacity: .5;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="list">
+    <li role="button" id="open-mindmap" disabled="true">
+      <div class="thumbnail">
+        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1408 928v320q0 119-84.5 203.5t-203.5 84.5h-832q-119 0-203.5-84.5t-84.5-203.5v-832q0-119 84.5-203.5t203.5-84.5h704q14 0 23 9t9 23v64q0 14-9 23t-23 9h-704q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-320q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19-45-19l-176-176-652 652q-10 10-23 10t-23-10l-114-114q-10-10-10-23t10-23l652-652-176-176q-19-19-19-45t19-45 45-19h512q26 0 45 19t19 45z"
+            fill="#fff" /></svg>
+      </div>
+      <div class="text">
+        Open mindmap
+      </div>
+    </li>
+    <li role="button" id="open-website">
+      <div class="thumbnail">
+        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"
+            fill="#fff" /></svg>
+      </div>
+      <div class="text">
+        Website
+      </div>
+    </li>
+    <script src="popup.js"></script>
+</body>
+
+</html>
